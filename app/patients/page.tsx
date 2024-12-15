@@ -6,7 +6,7 @@ import { columns } from "@/components/table/columns";
 import { DataTable } from "@/components/table/DataTable";
 import { getRecentAppointmentList } from "@/lib/actions/appointment.actions";
 
-const AdminPage = async () => {
+const patientPage = async () => {
   const appointments = await getRecentAppointmentList();
 
   return (
@@ -22,21 +22,21 @@ const AdminPage = async () => {
           />
         </Link>
 
-        <p className="text-16-semibold">Admin Dashboard</p>
+        <p className="text-16-semibold">Patient Dashboard</p>
       </header>
 
       <main className="admin-main">
         <section className="w-full space-y-4">
           <h1 className="header">Welcome 👋</h1>
           <p className="text-dark-700">
-            Start the day with managing new appointments
+            Start the day verifying your appointment
           </p>
         </section>
 
         <section className="admin-stat">
           <StatCard
             type="appointments"
-            count={appointments.ScheduledcheduledCount}
+            count={appointments.scheduledCount}
             label="Scheduled appointments"
             icon={"/assets/icons/appointments.svg"}
           />
@@ -60,4 +60,4 @@ const AdminPage = async () => {
   );
 };
 
-export default AdminPage;
+export default patientPage;

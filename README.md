@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div align="center">
   <br />
     <a href="https://youtu.be/lEflo_sc82g?feature=shared" target="_blank">
@@ -1018,3 +1019,6 @@ And if you're hungry for more than just a course and want to understand how we l
 </a>
 
 #
+=======
+# Healthpulse2
+>>>>>>> 5745e7fa372ecd5966e8107860bfe15208d23619

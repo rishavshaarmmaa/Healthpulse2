@@ -27,9 +27,11 @@ const Home = ({ searchParams }: SearchParamProps) => {
             <p className="justify-items-end text-dark-600 xl:text-left">
               © 2024 CarePluse
             </p>
-            <Link href="/?admin=true" className="text-green-500">
-              Admin
-            </Link>
+            <div className="flex space-x-4">
+              <Link href="/?admin=true" className="text-green-500">
+                Admin Dashboard
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -46,3 +48,4 @@ const Home = ({ searchParams }: SearchParamProps) => {
 };
 
 export default Home;
+
